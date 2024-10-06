@@ -10,7 +10,9 @@ ul {
 }
 .first {
   position: fixed;
-  width: 150px;
+  overflow-y: scroll;
+  width: 250px;
+  height: 90%;
 }
 .first ul {
   position: relative;
@@ -21,11 +23,12 @@ ul {
   display: flex;
   align-items: center;
   position: relative;
-  top: 25px;
+  top: 15px;
   width: 180px;
   height: 40px;
   border-radius: 7px;
   border-style: none;
+  z-index: 1;
 }
 .first ul li {
   position: absolute;
@@ -50,12 +53,54 @@ ul {
   position: relative;
   right: 40px;
 }
-.first .yt {
+.sticky .yt {
   position: relative;
+  top: 0px;
   left: 50px;
+  height: 50px;
 }
-.first span {
+.sticky {
+  position: sticky;
+  background-color: black;
+
+  top: 0px;
+  z-index: 1;
+}
+.sticky span {
   position: relative;
   bottom: 20px;
   left: 50px;
+}
+.second {
+  position: relative;
+  bottom: 80px;
+
+  border-radius: 7px;
+  border-style: none;
+  right: 50px;
+}
+.second ul {
+  position: relative;
+  top: 110px;
+  left: 40px;
+}
+.first .second-hr {
+  position: relative;
+  top: 66px;
+  left: 32px;
+  width: 180px;
+}
+.main {
+  margin-left: 250px;
+}
+.first .menuu {
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 175px;
+  width: 180px;
+  height: 40px;
+  border-radius: 7px;
+  border-style: none;
 }
